@@ -1,9 +1,11 @@
 `default_nettype none
 
-module top (
-            input  clk,
-            output out
+module top (clk,
+            detected
             );
+   input  clk;
+   output detected;
+
    reg [3:0]       counter;
    reg [1:0]       shifter;
    wire            detected;
